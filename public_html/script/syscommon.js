@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	$("header").html(navbar.add());
+	//$("header").html(navbar.add());
 });
