@@ -1,3 +1,15 @@
 $(document).ready(function(){
-	//$("header").html(navbar.add());
+	$("#nav-container-subjects").html(navbar.add());
+	$("#nav-subjects").mouseover(function(){
+		$("#nav-container-subjects").show();
+	});
+	$("#nav-container-subjects,.nav-simple").mouseout(function(){
+		$("#nav-container-subjects").hide();
+	});
+	$(".nav-simple").mouseover(function(){
+		$("#nav-container-subjects").hide();
+	});
+	$(".nav-container-item,#nav-container-subjects").mouseover(function(){
+		$("#nav-container-subjects").show();
+	});
 });
