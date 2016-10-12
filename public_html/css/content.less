@@ -1,8 +1,9 @@
 /* colour palette */
-@solid-base : #4484CE; /* #4484CE blue */
-@plain-base : #D9D9D9; /* #D9D9D9 Aluminium grey */
-@light-base : #F9CF00; /* #F9CF00 Yellow */
-@bold-base : #F19F4D; /* #F19F4D Orange */
+@solid-base : #6b7a8f; /* grey */
+@plain-base : #D9D9D9; /* aluminium */
+@light-base : #f7c331; /* Yellow */
+@bold-base : #cc0000; /* RED */
+@menu-container : #ffffff; /* white */
 /* plain text */
 @plain-text : #808080; /* #808080 Dark grey */
 
@@ -11,4 +12,76 @@ article, .article, section, .section{
   width: 100%;
   background-color: @plain-base;
   color: @plain-text;
+}
+
+content-section .content-section-item, .content-section .content-section-item {
+  display:inline-block;
+  vertical-align:top;
+  padding:12px 8px;
+  margin:10px 15px;
+  width:200px;
+  border:1px solid white;
+  background-color:#ffffff;
+}
+
+@media screen and (min-width: 600px) {
+  .content-section, content-section{
+    padding:15px;
+    margin:8px 25px;
+    width:90%;
+    background-color: @menu-container;
+    background:@menu-container;
+    border: 1px solid @bold-base;
+  }
+  .content-section-item h1 {
+    font-family: 'LatoWeb';
+    font-weight:500;
+    color:@bold-base;
+    margin:8px 0px;
+    font-size: 16px;
+  }
+  .content-section-item h2 {
+    font-family: 'LatoWeb';
+    font-weight:500;
+    color:@plain-text;
+    margin:6px 2px;
+    font-size: 14px;
+  }
+  .content-section-item h3 {
+    font-family: 'LatoWeb';
+    font-weight:500;
+    color:@plain-text;
+    margin:6px 4px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content-section{
+    padding:10px;
+    margin:8px 12px;
+    width:90%;
+    background-color: @menu-container;
+    border: 1px solid @bold-base;
+  }
+  .content-section-item h1 {
+    font-family: 'LatoWeb';
+    font-weight:500;
+    color:@bold-base;
+    margin:8px 0px;
+    font-size: 18px;
+  }
+  .content-section-item h2 {
+    font-family: 'LatoWeb';
+    font-weight:500;
+    color:@plain-text;
+    margin:6px 2px;
+    font-size: 16px;
+  }
+  .content-section-item h3 {
+    font-family: 'LatoWeb';
+    font-weight:500;
+    color:@plain-text;
+    margin:6px 4px;
+    font-size: 14px;
+  }
 }

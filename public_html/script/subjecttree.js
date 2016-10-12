@@ -1,4 +1,4 @@
-category={
+var category={
 	"Adjectives" : [{ "subject":"What are adjectives?","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"Comparative Adjectives","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"Superlative Adjectives","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
@@ -12,7 +12,7 @@ category={
 				],	
 	"Affixes" : [{ "subject":"What are affixes?","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
-	"Conditionals -if clauses-" : [{ "subject":"What are conditionals","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
+	"Conditionals_-if_clauses-" : [{ "subject":"What are conditionals","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"Zero Conditional","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"1st Conditional","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"2nd Conditional","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
@@ -24,7 +24,7 @@ category={
 				],
 	"Idioms" : [{ "subject":"What are idioms?","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
-	"Meta Language" : [{ "subject":"What is meta language","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
+	"Meta_Language" : [{ "subject":"What is meta language","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
 	"Nouns" : [{ "subject":"What are nouns","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"Proper Nouns","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
@@ -32,10 +32,10 @@ category={
 				{ "subject":"Count Nouns and non-count nouns","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"Changing nouns from Singular to plural","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
-	"Numbers and dates" : [{ "subject":"Ordinal Numbers","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
+	"Numbers_and_dates" : [{ "subject":"Ordinal Numbers","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"Writing dates","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
-	"Phrasal Verbs" : [{ "subject":"What are phrasal verbs","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
+	"Phrasal_Verbs" : [{ "subject":"What are phrasal verbs","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
 	"Possessives" : [{ "subject":"What are possessives","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
@@ -57,7 +57,7 @@ category={
 				{ "subject":"Using question marks","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"Using exclamation marks","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
-	"Subject, object and indirect object" : [{ "subject":"What is the grammatical subject","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
+	"Subject_object_and_indirect_object" : [{ "subject":"What is the grammatical subject","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"What is the grammatical object","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"What is the grammatical indirect object","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
@@ -76,6 +76,6 @@ category={
 				{ "subject":"Modal verbs","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				{ "subject":"Irregular Verbs","video":"Information Video","article":"Information sheet","worksheets":"worksheets"}
 				],
-	"Word Class" : [{ "subject":"What is word class?","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
+	"Word_Class" : [{ "subject":"What is word class?","video":"Information Video","article":"Information sheet","worksheets":"worksheets"},
 				]
 };

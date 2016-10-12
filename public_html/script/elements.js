@@ -5,7 +5,7 @@ navbar.add = function(){
 
 	var htmlelem = "";
 	for(var items in category){
-		htmlelem += "<div class=\"nav-container-item\"><h1>" + items + "</h1>";
+		htmlelem += "<div class=\"nav-container-item\" id=\"" + items + "\"><h1>" + items.replace(/_/g," "); + "</h1>";
 		htmlelem += "<h2>" + category[items][0].subject + "</h2>";
 		htmlelem += "<h3>" + category[items][0].video + "</h3>";
 		htmlelem += "<h3>" + category[items][0].article + "</h3>";
@@ -18,6 +18,34 @@ navbar.add = function(){
 	htmlelem += "<div class=\"clear\"></div>";
 	
 	return htmlelem;
+};
+navbar.swichOn = function(){
+
+	$("#nav-subjects,.nav-container-item,#nav-container-subjects").mouseover(function(){
+		$("#nav-container-subjects").show();
+	});
+	$("#nav-container-subjects,.nav-simple").mouseout(function(){
+		$("#nav-container-subjects").hide();
+	});
+	$(".nav-simple").mouseover(function(){
+		$("#nav-container-subjects").hide();
+	});
+	$("#nav-subjects").click(function(){
+		$("#nav-container-subjects").show();
+	});
+	$(".nav-container-item").click(function(){
+		$("#nav-container-subjects").hide();
+		var info = $(this).attr("id");
+	  		var htmlelem = "<div class=\"content-section-item\" id=\"section_" + info + "\"><h1>" + info.replace(/_/g," "); + "</h1>";
+			for (var i=0; i < category[info].length; i++) {
+					htmlelem += "<h2>" + category[info][i].subject + "</h2>";
+					htmlelem += "<h3>" + category[info][i].video + "</h3>";
+					htmlelem += "<h3>" + category[info][i].article + "</h3>";
+					htmlelem += "<h3>" + category[info][i].worksheets + "</h3>";
+			};
+			htmlelem += "</div><div class=\"clear\"></div>";	  
+		$("#content-section").html(htmlelem);
+	});
 };
 
 /*	    		<div class="nav-container-item">
