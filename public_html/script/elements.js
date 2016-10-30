@@ -36,15 +36,17 @@ navbar.swichOn = function(){
 	$(".nav-container-item").click(function(){
 		$("#nav-container-subjects").hide();
 		var info = $(this).attr("id");
-	  		var htmlelem = "<div class=\"content-section-item\" id=\"section_" + info + "\"><h1>" + info.replace(/_/g," "); + "</h1>";
+	  		var htmlelem = "<article class=\"content-section-item\" id=\"section_" + info + "\"><h1>" + info.replace(/_/g," "); + "</h1>";
 			for (var i=0; i < category[info].length; i++) {
 					htmlelem += "<h2>" + category[info][i].subject + "</h2>";
 					htmlelem += "<h3>" + category[info][i].video + "</h3>";
 					htmlelem += "<h3>" + category[info][i].article + "</h3>";
 					htmlelem += "<h3>" + category[info][i].worksheets + "</h3>";
 			};
-			htmlelem += "</div><div class=\"clear\"></div>";	  
+			htmlelem += "<video width=\"250\" height=\"200\" controls><source src=\"videos/samplevideo.mp4\" type=\"video/mp4\">Your browser does not support the video tag.</video>";	  
+			htmlelem += "</article>";	  
 		$("#content-section").html(htmlelem);
+		$("#content-section").show();	
 	});
 };
 

@@ -14,17 +14,23 @@
         <title>Sign Language Project</title>
     </head>
     <body>
+    	<div id="page-container">
     	<header>
-    		<table width="100%" border="1">
+    		<table width="100%">
     			<tr>
     				<td><h1>English for Deaf Learners</h1></td>
     				<!--<td width="250px"><input type="text" placeholder="search" ="search_box"></td>-->
     			</tr>
     		</table>
     	</header>
-    	<div class="nav"><a href="#" class="nav-simple">home</a><a href="#" id="nav-subjects">subjects</a><a href="#" class="nav-simple">about</a><a href="#" class="nav-simple">contacts</a></div>
+    	<div class="nav"><a href="#home" class="nav-simple">home</a><a href="#" id="nav-subjects">subjects</a><a href="#aboutus" class="nav-simple">about</a><a href="#contacts" class="nav-simple">contacts</a></div>
     		<div class="nav-container" id="nav-container-subjects"></div>
-			<section class="content-section">
+    	
+    	<div id="page-body">	
+	    	<section class="content-section" id="content-section">
+    		</section>
+
+			<section class="content-section" id="home">
 	    		<article>
 	    			<h2>Wikipedia definition:</h2>
 		    		<p>A sign language (also signed language) is a language which chiefly uses manual communication to convey meaning, as opposed to acoustically 
@@ -46,14 +52,39 @@
 					</p>
 				</article>
 			</section>
-    	<section class="content-section" id="content-section">
-    	</section>
-    	
-    	<footer></footer>
+
+			<section class="content-section" id="aboutus">
+	    		<article>
+	    			<h2>ABOUT</h2>
+	    			<div class="media-article">
+		    			<img src="images/aboutus.png">
+			    		<p>My name is <span>Russell Aldersson</span> and I am a teacher at the City Literary Institute in Central London.  After many years working as a BSL/English 
+			    			interpreter I began a shift into the education sector and now focus primarily on the teaching of English and Maths to Deaf adults. 
+			    			I hold a Postgraduate Certificate in Teaching and Learning in Higher Education, a Diploma in Teaching in the Lifelong Sector, Qualified 
+			    			Teacher Status (Secondary Education), CELTA (Cambridge certificate in English Language Teaching to Adults), MA (Applied Linguistics), 
+			    			MA (Language Teaching) and I am currently working towards my EdD (Doctorate in Education).
+			    		</p>
+						<p>
+							This website was developed after I identified a need for Deaf learners of English, who have a signed language as a first or preferred language, 
+							to have a resource where grammatical concepts can be explained in a medium that is easier to understand and more accessible. Whilst developed 
+							initially to support my own students and those of my colleagues at the City Lit, this site and the resources available are for anyone who feels 
+							they can benefit from the content. There is a long way to go and this is just the beginning and I hope to expand and develop the site moving 
+							forward.  Your feedback, positive and constructive, is warmly welcomed. 		    		  
+			    		</p>
+		    		</div>
+		    		<div style="clear:both;"></div>
+				</article>
+			</section>
+
+    </div>	
+    
+    <footer></footer>
+	
 	<script src="script/jquery-3.1.1.min.js"></script>
 	<!--<script src="script/app-pack.min.js"></script> 	production-->
 	<script src="script/subjecttree.js"></script>
 	<script src="script/elements.js"></script>	
 	<script src="script/syscommon.js"></script>
+	</div>
   	</body>
 </html>

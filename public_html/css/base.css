@@ -37,16 +37,23 @@
     text-rendering: optimizeLegibility;
 }
 
-body {
-	background-color:#F0F0F0;
-}
 h1 {font-size: 125%;}
 h2 {font-size: 110%;}
 h3 {font-size: 100%;}
 h4 {font-size: 90%;}
 
 htlm, body {
+	background-color:#F0F0F0;
+	height: 100%;
 	padding:0px;
 	margin:0px;
 	overflow-x:hidden;
+}
+#page-container {
+   min-height:100%;
+   position:relative;
+}
+
+#page-body{
+	padding-bottom:200px;
 }
